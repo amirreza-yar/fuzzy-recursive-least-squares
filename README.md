@@ -77,27 +77,6 @@ After installing the necessary packages, you can run the main script to see the 
 python main.py
 ```
 
-### Directory Structure
-
-The directory structure of the project is as follows:
-
-```
-fuzzy-rls/
-│
-├── data/
-│   └── dataset.csv       # The dataset used for the model
-│
-├── src/
-│   ├── frls.py           # Implementation of the FRLS algorithm
-│   ├── rls.py            # Implementation of the RLS algorithm
-│   ├── fuzzy_logic.py    # Fuzzy logic functions and rules
-│   └── utils.py          # Utility functions
-│
-├── main.py               # Main script to run the FRLS algorithm
-├── requirements.txt      # List of required Python packages
-└── README.md             # Project README file
-```
-
 ## License
 
 This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
