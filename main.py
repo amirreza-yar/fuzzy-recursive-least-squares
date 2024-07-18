@@ -1,3 +1,10 @@
+"""
+Implementation of Recursive Least Squares (RLS)
+
+This project is devised by Dr. Shasadeghi and implemented by Amirreza Yarahmadi
+"""
+
+# RLS algorithm with cost function computation
 import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
@@ -30,6 +37,8 @@ def rls_algo(n_features, data):
 
     return w, P, y_pred, J_p
 
+
+# Loading data and runnig the algorithm
 # Import the data from the csv file
 data = pd.read_csv('data/rls_data_unsortted.csv')
 
@@ -38,6 +47,7 @@ w, P, y_pred, J_p = rls_algo(4, data)
 
 print(f"data shape: {data.shape}", f"Theta matrix: {w}", sep='\n')
 
+# Showing the output for all data
 plt.figure(figsize=(14, 6))
    
 plt.subplot(1, 3, 1)
@@ -68,6 +78,8 @@ plt.grid()
 plt.tight_layout()
 plt.show()
 
+
+# Implementing a train-test model for project
 # Import the data from the csv file
 data = pd.read_csv('data/rls_data_unsortted.csv')
 train_data = data[:60]
@@ -84,6 +96,7 @@ test_xs = np.array([test_data[:, 0], test_data[:, 1], test_data[:, 2], test_data
 test_ys = np.array([test_data[:, 4]])[0]
 test_y_pred = w @ test_xs
 
+# Showing the results
 plt.figure(figsize=(14, 6))
    
 plt.subplot(1, 2, 1)
