@@ -76,6 +76,7 @@ After installing the necessary packages, you can run the main script to see the 
 ```bash
 python main.py
 ```
+Also you can see the [detailed document](notebook/rls_doc.md)
 
 ## License
 
